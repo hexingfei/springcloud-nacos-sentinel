@@ -1,0 +1,57 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: nacosconsumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        prefix: nacosConsumer
+    sentinel:
+   #  datasource: 127.0.0.1:8848
+#
+#       flow:
+#         nacos:
+#           server-addr: localhost:8848
+#            dataId: ${spring.application.name}-flow-rules
+#            groupId: SENTINEL_GROUP
+#            rule-type: flow
+#       degrade:
+#         nacos:
+#           server-addr: localhost:8848
+#           dataId: ${spring.application.name}-degrade-rules
+#           groupId: SENTINEL_GROUP
+#           rule-type: degrade
+#       system:
+#         nacos:
+#           server-addr: localhost:8848
+#           dataId: ${spring.application.name}-system-rules
+#           groupId: SENTINEL_GROUP
+#           rule-type: system
+#       authority:
+#         nacos:
+#           server-addr: localhost:8848
+#           dataId: ${spring.application.name}-authority-rules
+#           groupId: SENTINEL_GROUP
+#           rule-type: authority
+#       param-flow:
+#         nacos:
+#           server-addr: localhost:8848
+#           dataId: ${spring.application.name}-param-flow-rules
+#           groupId: SENTINEL_GROUP
+#           rule-type: param-flow
+     transport:
+       dashboard:  localhost:8080
+       port: 8719
+
+
+
+
+
+
+
+
