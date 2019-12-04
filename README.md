@@ -6,6 +6,7 @@
  2.下载源码到本地 修改yml 里面配置
 
 3.此项目集成了服务治理注册<font color=#0099ff size=8>nacos</font> 降级熔断<font color=red size=5>sentinel</font> 以及<font color=red size=5>sentinel</font> 配置规则推模式到配置中心<font color=red size=5>nacos</font> 动态变更通知，无需重启项目。
+4.zuul 项目为网关 已接入nacos 服务治理平台 ，可以动态实现路由配置
 ### 使用说明
 下载nacos 包 解压 启动 访问地址 http://localhost:8848/nacos/ 登录用户密码默认 nacos 
 
