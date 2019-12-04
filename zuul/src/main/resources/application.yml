@@ -1,0 +1,23 @@
+server:
+  port: 8767
+spring:
+  application:
+    name: zuul-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+              server-addr: 127.0.0.1:8848
+              file-extension: yml
+              prefix: zuul-server
+
+
+
+
+
+
+
+
+
+
